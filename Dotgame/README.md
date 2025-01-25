@@ -86,10 +86,3 @@ Flow
 
     Scoring: After 5 turns, the final score is displayed on the LCD.
 
-Customization
-
-    Adjust seven_seg_digits array to modify 7-segment display patterns.
-
-    Change buzzerSound() parameters to alter sound effects.
-
-    Modify firstLevel() time calculation (200 - turn*20) to tweak difficulty.
