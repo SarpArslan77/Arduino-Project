@@ -59,11 +59,10 @@ try:
             # Get the current time elapsed since the start
             current_time = time.time() - start_time
 
-            # --- THIS IS THE NEW LOGIC TO INTERRUPT THE PLOT ---
+            # Logic to interrupt the plot
             y_to_plot = dist
             if dist > 400 or dist < 0: # Interrupt if value is > 400 or invalid (e.g. < 0)
                 y_to_plot = np.nan # Use NaN to create a break in the plot line
-            # --------------------------------------------------------
 
             # Append new data
             x_current.append(current_time)
